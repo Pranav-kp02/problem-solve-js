@@ -20,4 +20,20 @@ const twoPattern = (num) => {
     console.log(str);
   }
 };
-twoPattern(4);
+// twoPattern(4);
+
+const thirdPattern = (num) => {
+  for (let i = 1; i <= num; i++) {
+    let str = "";
+    for (let space = 1; space <= num - i; space++) {
+      str += " ";
+    }
+    for (let j = 0; j < i; j++) {
+      str += "*";
+    }
+
+    console.log(str);
+  }
+};
+
+thirdPattern(4);

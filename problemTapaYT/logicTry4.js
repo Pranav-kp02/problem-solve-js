@@ -68,4 +68,30 @@ const randomHexgen = () => {
   return "#" + Math.floor(Math.random() * 1000000).toString(16);
 };
 
-console.log(randomHexgen());
+// console.log(randomHexgen());
+//
+
+// 34
+
+const removeDuplicate = (arr) => {
+  let ogArr = [];
+  arr.map((ele) => {
+    if (!ogArr.includes(ele)) {
+      ogArr.push(ele);
+    }
+  });
+  console.log(ogArr);
+};
+
+// removeDuplicate([3, 3, 4, 4, 2, 2, 1]);
+// 35
+
+const isEmptyObj = (obj) => {
+  if (Object.keys(obj).length === 0) return "is empty";
+  for (let key in obj) {
+    if (!obj[key]) return "is empty bt has key";
+  }
+  return "is not empty";
+};
+
+// console.log(isEmptyObj({ name: "false" }));
