@@ -36,4 +36,21 @@ const thirdPattern = (num) => {
   }
 };
 
-thirdPattern(4);
+// thirdPattern(4);
+
+const fouthPattern = (num) => {
+  for (let i = 1; i <= num; i++) {
+    let str = "";
+    for (let j = 1; j <= num - i; j++) {
+      str += " ";
+    }
+    for (let k = 1; k <= i; k++) {
+      str += "*";
+    }
+    for (let k = 1; k <= i - 1; k++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+};
+fouthPattern(5);
