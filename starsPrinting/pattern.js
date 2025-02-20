@@ -53,4 +53,16 @@ const fouthPattern = (num) => {
     console.log(str);
   }
 };
-fouthPattern(5);
+// fouthPattern(5);
+
+const fifthPattern = (num) => {
+  for (let i = 0; i < num; i++) {
+    let str = "";
+    for (let j = 1; j <= num - i; j++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+};
+
+fifthPattern(5);
