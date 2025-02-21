@@ -3,7 +3,7 @@
 const sum = (num1, num2) => {
   console.log(num1 + num2);
 };
-sum(9, 8);
+// sum(9, 8);
 
 const areaRectangle = (h, b) => {
   console.log(h * b);
@@ -33,4 +33,33 @@ const smallestNumber = (num1, num2, num3) => {
   return small;
 };
 
-console.log(smallestNumber(9, 4, 1));
+// console.log(smallestNumber(9, 4, 1));
+
+// 4
+
+const reverseString = (str) => {
+  str = str.split("").reverse().join("");
+  console.log(str);
+};
+
+// reverseString("hello world");
+
+// 5
+
+const recursionFActorial = (num) => {
+  if (num === 1) {
+    return num;
+  } else {
+    return num * recursionFActorial(num - 1);
+  }
+};
+
+// console.log(recursionFActorial(5));
+
+const findLeapYear = (num) => {
+  if (num % 4 === 0) {
+    return "isLeapYear";
+  }
+  return "not leap year";
+};
+// console.log(findLeapYear(2028));
