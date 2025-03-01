@@ -96,4 +96,45 @@ const sixthPattern = (num) => {
     console.log(str);
   }
 };
-sixthPattern(5);
+// sixthPattern(5);
+
+// 7
+
+const sevnthPattern = (num) => {
+  for (let i = 1; i <= num / 2; i++) {
+    let str = "";
+    for (let star = 1; star <= i; star++) {
+      str += "*";
+    }
+    for (let space = 1; space <= num - i * 2; space++) {
+      str += " ";
+    }
+    for (let star = 1; star <= i; star++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+
+  for (let i = 1; i <= 1; i++) {
+    let str = "";
+    for (let star = 1; star <= num; star++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+
+  for (let i = num / 2; i >= 1; i--) {
+    let str = "";
+    for (let star = 1; star <= i; star++) {
+      str += "*";
+    }
+    for (let space = 0; space <= num - i * 2; space++) {
+      str += " ";
+    }
+    for (let star = 1; star <= i; star++) {
+      str += "*";
+    }
+    console.log(str);
+  }
+};
+sevnthPattern(7);
